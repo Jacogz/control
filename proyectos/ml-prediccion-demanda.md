@@ -5,7 +5,7 @@ estado: activo
 repo: https://github.com/Jacogz/ML-Prediccion-Demanda
 ciclo: 1
 inicio: 2026-10-19
-appetite: 1 semana (fijada por el curso; entrega 2026-10-26)
+appetite: 2 semanas (fijada por el curso; entrega 2026-11-03)
 ---
 
 # ML Predicción de Demanda
@@ -20,7 +20,7 @@ En proyectos de clase, esta tabla se sincroniza desde el CLAUDE.md del repo (que
 
 | # | Entregable | Fecha | Descripción | Estado | Enlace |
 |---|---|---|---|---|---|
-| 1 | Repo + `model_development.ipynb` + video de 2 min | 2026-10-26 | Entrega única; puede cambiar tras la revisión del profesor esta semana | pendiente | |
+| 1 | Repo + `model_development.ipynb` + video de 2 min | 2026-11-03 | Entrega única; movida del 2026-10-26 | pendiente | |
 | 2 | Presentación final | por confirmar | Sustentar problema, metodología, modelo, generalización, métricas, despliegue y reajuste | pendiente | |
 
 Estados: pendiente · en curso · entregado · recortado
