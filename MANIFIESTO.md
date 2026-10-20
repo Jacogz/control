@@ -47,7 +47,6 @@ Un proyecto es `candidato` solo si responde sí a las tres preguntas:
 2. ¿Tengo derecho a publicarlo?
 3. ¿Su núcleo se puede llevar a demo o vivo en un solo ciclo?
 
-Los repos de clase son privados mientras dure la materia. Si pasan a demo, el núcleo se publica en un repo limpio.
 
 ## Herramientas
 - **GitHub** es la fuente de verdad: este repo, los issues y un solo Project con iteración semanal.

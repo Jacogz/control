@@ -10,7 +10,7 @@ Vas a convertir una idea o un documento en un proyecto listo para trabajar dentr
 - **Fuente:** [idea en texto | ruta o enlace a un documento]
 - **Tipo:** [clase | portafolio]
 - **Repo del proyecto:** el directorio actual (ya creado y vacío o casi vacío)
-- **Repo de control:** [ruta], agregado con --add-dir
+- **Repo de control:** ~/Documents/control, agregado con --add-dir
 
 ## Antes de empezar
 Lee del repo de control: `MANIFIESTO.md`, `proyectos/_plantilla.md`, `plantillas/CLAUDE.proyecto.md` y `plantillas/NEXT.md`. Todo lo que generes debe respetarlos.
@@ -41,7 +41,6 @@ En el repo del proyecto:
 - `docs/`: guarda ahí el documento fuente (en `docs/enunciados/` si es un enunciado de clase) e indéxalo.
 - `.github/ISSUE_TEMPLATE/`: copia `tarea.yml` e `idea.yml` del repo de control.
 - `.gitignore`: con `.env` incluido como mínimo.
-- [CLASE] Confirma conmigo que el repo es privado.
 
 En el repo de control:
 - `proyectos/<nombre>.md`: la ficha aprobada.

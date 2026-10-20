@@ -73,5 +73,4 @@ Cuando comparta un enunciado en la sesión o lo suba al repo:
 ## Reglas
 - No amplíes el alcance más allá del issue activo. Si ves algo que vale la pena, propón un issue con label `inbox`.
 - Nunca escribas secretos en archivos versionados. Usa `.env`, que debe estar en `.gitignore`.
-- [CLASE] Este repo es privado mientras dure la materia. No lo hagas público ni sugieras publicarlo; eso se decide en el ritual de cierre.
 - Commits con Conventional Commits. Los PR referencian el issue con `Closes #N`.
