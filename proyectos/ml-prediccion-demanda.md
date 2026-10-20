@@ -27,7 +27,7 @@ Estados: pendiente · en curso · entregado · recortado
 
 ## Definición de terminado
 Cada criterio debe poder verificarse con un comando, un test o una captura.
-- [ ] El notebook `model_development.ipynb` corre completo en un entorno limpio: `jupyter nbconvert --execute --to notebook model_development.ipynb` termina con código 0.
+- [ ] El notebook `model_development.ipynb` corre completo en un runtime nuevo de Colab: "Ejecutar todo" termina sin errores, también desde la cuenta de Nicolás.
 - [ ] El notebook tiene una sección por cada requisito 3.1–3.9 del enunciado; el README los enlaza en una tabla requisito → sección.
 - [ ] La división es temporal: un test verifica que `max(fecha_train) < min(fecha_test)` y que ninguna variable usa datos del día predicho o posteriores (`pytest` en verde).
 - [ ] Se compara la línea base (mismo día de la semana anterior) contra al menos tres modelos candidatos, con validación cruzada temporal (`TimeSeriesSplit`). El notebook muestra una tabla de MAE por modelo y los hiperparámetros elegidos.
