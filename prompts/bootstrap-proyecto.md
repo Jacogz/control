@@ -1,7 +1,7 @@
 # Bootstrap de proyecto
 
 <!-- Uso: abrir Claude Code en el repo del proyecto (nuevo) con este repo de control agregado:
-       claude --add-dir ~/proyectos/<repo-control>
+       claude --add-dir ~/Documents/control
      y pegar este prompt con las entradas llenas. -->
 
 Vas a convertir una idea o un documento en un proyecto listo para trabajar dentro de mi framework.
