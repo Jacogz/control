@@ -30,7 +30,7 @@ repo-control/
 2. Crear un GitHub Project (de usuario) con:
    - Campos: Estado (selección única: idea, candidato, activo, demo, vivo, entregado, archivado), Tipo (`portafolio` / `clase`), Iteración (1 semana), Entrega (fecha).
    - Vistas: "Esta semana" (`iteration:@current`), "Inbox" (`label:inbox`), "Tablero" (agrupado por Estado).
-3. Crear las labels `inbox`, `candidato-demo` y una por proyecto (`ferv`, `dfs`) en cada repo que las use. Si la label no existe, la plantilla de idea no la aplica.
+3. Crear las labels `inbox`, `candidato` y una por proyecto (`ferv`, `dfs`) en cada repo que las use. Si la label no existe, la plantilla de idea no la aplica.
 4. Crear en este repo un issue fijo "Revisiones semanales" y anotar su número en `prompts/revision-semanal.md` y `prompts/cowork-control.md`.
 5. En Cowork: crear el proyecto "Control", pegar el contenido de `prompts/cowork-control.md` como instrucciones, conectar GitHub y programar la revisión semanal (domingo en la noche).
 6. Verificar:
