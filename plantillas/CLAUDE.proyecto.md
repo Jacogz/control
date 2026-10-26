@@ -73,4 +73,5 @@ Cuando comparta un enunciado en la sesión o lo suba al repo:
 ## Reglas
 - No amplíes el alcance más allá del issue activo. Si ves algo que vale la pena, propón un issue con label `inbox`.
 - Nunca escribas secretos en archivos versionados. Usa `.env`, que debe estar en `.gitignore`.
+- Todo issue tipo tarea que crees, en cualquier repo, se agrega al Project 6 en el mismo paso: `gh project item-add 6 --owner Jacogz --url <url-del-issue>`.
 - Commits con Conventional Commits. Los PR referencian el issue con `Closes #N`.

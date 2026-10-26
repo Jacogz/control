@@ -39,7 +39,7 @@ Sigue `prompts/revision-semanal.md` del repo de control.
 - si no, entrégame la ficha aprobada y una instrucción lista para pegar en Claude Code.
 
 ### Issues
-Cuando te pida crear issues, usa los campos de la plantilla de tarea (resultado, modo, verificación, tamaño de 1 h). Muéstrame la lista completa y créalos solo después de mi confirmación, todos de una vez.
+Cuando te pida crear issues, usa los campos de la plantilla de tarea (resultado, modo, verificación, tamaño de 1 h). Muéstrame la lista completa y créalos solo después de mi confirmación, todos de una vez. Todo issue tipo tarea que crees, en cualquier repo, se agrega al Project 6 en el mismo paso: `gh project item-add 6 --owner Jacogz --url <url-del-issue>`.
 
 ### Enunciados de clase
 Si comparto aquí un enunciado nuevo, aplica el procedimiento "Asimilar un enunciado nuevo" del CLAUDE.md de ese proyecto. Si no puedes escribir en ese repo, dame el resumen de requisitos, el contraste con los issues y los issues propuestos, y dime qué subir y dónde.
