@@ -45,8 +45,9 @@ Cada criterio debe poder verificarse con un comando, un test o una captura.
 - Monitoreo automático de drift: solo se diseña, no se implementa.
 
 ## Riesgos y huecos conocidos
-- **Plazo de 7 días.** Si el 22/10 el pipeline no corre de punta a punta con la línea base, se reduce la lista de candidatos y se simplifica la interfaz.
-- **Horizonte, tienda y familias por definir tras el EDA.** Se deciden a más tardar el 21/10; si no, define la variable objetivo y el horizonte y bloquea todo lo demás.
+- **Plazo de 2 semanas** (era de 7 días antes de mover la entrega al 3/11). Si el 28/10 el pipeline no corre de punta a punta con la línea base (#6), se reduce la lista de candidatos y se simplifica la interfaz.
+- **Horizonte por definir** (tienda 44 y 5 familias ya elegidas, #2). Se decide a más tardar el 27/10 en el ADR 0001 (#5); si no, define la variable objetivo y el horizonte y bloquea todo lo demás.
+- **Puntos de control hacia el 3/11:** 27/10 ADR 0001 (#5) y EDA de promociones (#4) · 28/10 pipeline con línea base (#6) y spike de Streamlit (#9) · 29/10 variables sin fuga (#7) y ADR 0002 (#8) · 31/10 comparación de modelos con `TimeSeriesSplit` y SHAP (#11) · 1–2/11 Streamlit con SHAP, `docs/reajuste.md`, README y video.
 - **Fuga de información.** La tabla de transacciones queda fuera. El precio del petróleo y las promociones solo entran si se conocen antes del día predicho.
 - **Fecha sujeta a cambio** por la revisión del profesor.
 - **Trabajo en equipo:** reparto con Nicolás y principio 6. Los dos tienen que poder explicar todo en la presentación.
