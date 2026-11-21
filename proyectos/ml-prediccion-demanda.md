@@ -1,7 +1,7 @@
 ---
 nombre: ML Predicción de Demanda
 tipo: clase
-estado: activo
+estado: entregado
 repo: https://github.com/Jacogz/ML-Prediccion-Demanda
 ciclo: 1
 inicio: 2026-10-19
@@ -11,7 +11,7 @@ appetite: 2 semanas (fijada por el curso; entrega 2026-11-03)
 # ML Predicción de Demanda
 
 ## Por qué existe
-Proyecto final de Fundamentos de Aprendizaje Automático (2026-2), en equipo con Nicolás Zapata (@Nicolaszj). Predice la demanda diaria por familia de producto con datos de Favorita.
+Proyecto final de Fundamentos de Aprendizaje Automático (2026-2), en equipo con Nicolás Zapata (@Nicolaszj). Predice la venta total del día siguiente de un supermercado (tienda 44 de Favorita, 5 familias de mayor venta).
 Lo que quiero aprender: construir un pipeline reutilizable (plantilla de datos → variables → entrenamiento → evaluación → artefacto) y seleccionar modelos con validación temporal sin fuga.
 Para un empleador: ML de punta a punta, con despliegue y reentrenamiento, no solo un notebook.
 
@@ -20,8 +20,8 @@ En proyectos de clase, esta tabla se sincroniza desde el CLAUDE.md del repo (que
 
 | # | Entregable | Fecha | Descripción | Estado | Enlace |
 |---|---|---|---|---|---|
-| 1 | Repo + `model_development.ipynb` + video de 2 min | 2026-11-03 | Entrega única; movida del 2026-10-26 | pendiente | |
-| 2 | Presentación final | por confirmar | Sustentar problema, metodología, modelo, generalización, métricas, despliegue y reajuste | pendiente | |
+| 1 | Repo + `model_development.ipynb` + video de 2 min | 2026-11-03 | Entrega única; movida del 2026-10-26 | entregado | [repo](https://github.com/Jacogz/ML-Prediccion-Demanda) |
+| 2 | Presentación final | por confirmar | Sustentar problema, metodología, modelo, generalización, métricas, despliegue y reajuste | entregado | |
 
 Estados: pendiente · en curso · entregado · recortado
 
@@ -29,10 +29,10 @@ Estados: pendiente · en curso · entregado · recortado
 Cada criterio debe poder verificarse con un comando, un test o una captura.
 - [ ] El notebook `model_development.ipynb` corre completo en un runtime nuevo de Colab: "Ejecutar todo" termina sin errores, también desde la cuenta de Nicolás.
 - [ ] El notebook tiene una sección por cada requisito 3.1–3.9 del enunciado; el README los enlaza en una tabla requisito → sección.
-- [ ] La división es temporal: un test verifica que `max(fecha_train) < min(fecha_test)` y que ninguna variable usa datos del día predicho o posteriores (`pytest` en verde).
+- [x] La división es temporal: un test verifica que `max(fecha_train) < min(fecha_test)` y que ninguna variable usa datos del día predicho o posteriores (`pytest` en verde).
 - [ ] Se compara la línea base (mismo día de la semana anterior) contra al menos tres modelos candidatos, con validación cruzada temporal (`TimeSeriesSplit`). El notebook muestra una tabla de MAE por modelo y los hiperparámetros elegidos.
 - [ ] El modelo final tiene un MAE en test menor que la línea base, reportado en el notebook y en el README.
-- [ ] El pipeline se corre con un solo comando sobre cualquier CSV con la plantilla fija (fecha, categoría, unidades, [precio], [promoción]) y deja un modelo guardado: `python -m src.pipeline --data <csv>` funciona con el subconjunto de Favorita y con un CSV de prueba distinto.
+- [x] El pipeline se corre con un solo comando sobre cualquier CSV con la plantilla fija (fecha, categoría, unidades, [precio], [promoción]) y deja un modelo guardado: `python -m src.pipeline --data <csv>` funciona con el subconjunto de Favorita y con un CSV de prueba distinto.
 - [ ] Una app de Streamlit en una URL pública permite subir un CSV, ver la predicción y su explicación con SHAP. Verificación: la URL abre en una ventana de incógnito y una captura queda en el README.
 - [ ] `docs/reajuste.md` define la métrica de monitoreo, el umbral, la frecuencia y cómo se valida y publica la nueva versión, reutilizando el mismo comando del pipeline.
 - [ ] El enlace al video de 2 minutos está en el README.
@@ -58,10 +58,10 @@ Cada criterio debe poder verificarse con un comando, un test o una captura.
 - [Pendiente] ADR 0002: modelos candidatos y por qué.
 
 ## Cierre
-Se llena al archivar o entregar, mientras el contexto está fresco.
-- **Estado real:** qué quedó funcionando y qué no.
-- **Mi rol:** [si fue en equipo: qué hice yo, qué hicieron otros, nombres].
-- **Cómo correrlo:** [comandos].
-- **Qué aprendí / qué haría distinto:** 
-- **¿Candidato a demo?** IA+infra: sí/no · Derecho a publicar: sí/no · Demo en un ciclo: sí/no
-- **Pitch (si los tres son sí):** [5 líneas: qué sería el demo, qué se recorta, cuánto tiempo]. Evaluar aquí la candidatura con infraestructura (Docker / despliegue propio).
+Se llenó el 2026-11-20, después de la entrega (3/11) y la presentación.
+- **Estado real:** entregado y presentado; nota perfecta, sin retroalimentación particular. Funciona: notebook con modelo final HGBT (MAE en prueba 2750.6 vs 4125.5 de la línea base, −33 %, WAPE 7.7 %), pipeline de un comando con tests de división temporal y no-fuga, app pública en Streamlit con predicción del día siguiente y explicación SHAP, y video grabado. Todos los issues quedaron cerrados. Contra la definición de terminado, en el repo no quedó evidencia de: corrida completa en un runtime nuevo de Colab, tabla requisito → sección en el README, tercer modelo candidato (se compararon HGBT y Random Forest; el ADR 0002 no se subió), MAE final, captura y enlace al video en el README, y `docs/reajuste.md` (el reajuste quedó dentro del notebook). Se deja así por decisión propia: la entrega se calificó completa.
+- **Mi rol:** en equipo con Nicolás Zapata (@Nicolaszj). Yo: modelo final (#12: `GridSearchCV` de HGBT con `TimeSeriesSplit`, selección en 8 semanas de prueba), revisión del pipeline (completar el 25-dic, una sola forma de medir el MAE), la app como herramienta de negocio (WAPE, atribución de la venta por familia, ventana de entrenamiento, datos de prueba) y su publicación en Streamlit Cloud. Nicolás: interpolación de los meses dañados, `src/pipeline.py`, la primera versión de la app y SHAP (#11).
+- **Cómo correrlo:** `pip install -r requirements.txt pytest` · `python -m src.pipeline --data <csv>` · `pytest` · `streamlit run app.py`. App: https://fzlsgz3jep2ztsjwtfz3ze.streamlit.app/. El notebook (`src/model_development.ipynb`) corre en Colab con un token de Kaggle (ver README).
+- **Qué aprendí / qué haría distinto:** trabajo con series de tiempo (validación temporal, fuga de información, rezagos y huecos de calendario) e interpretabilidad con SHAP. Haría distinto la presentación de los hallazgos: hablarle más a la persona de negocio que usa una herramienta predictiva, sobre todo en la app de Streamlit.
+- **¿Candidato a demo?** IA+infra: sí · Derecho a publicar: no · Demo en un ciclo: sí → **no es candidato** por ahora.
+- **Pitch:** no aplica (falta el derecho a publicar). La app ya empezó a evolucionar como versión de portafolio (cambios del 6/11, para mostrársela a un posible usuario); si se resuelve el derecho a publicar, se vuelve a evaluar como candidato.
