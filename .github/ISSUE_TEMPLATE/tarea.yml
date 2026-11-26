@@ -1,5 +1,5 @@
 name: Tarea
-description: Unidad de trabajo que cabe en una sesión de 1 hora
+description: Unidad de trabajo con un resultado verificable
 title: "[tarea] "
 projects: ["Jacogz/6"]
 body:
@@ -27,13 +27,6 @@ body:
       description: Test, comando o captura.
     validations:
       required: true
-  - type: checkboxes
-    id: tamano
-    attributes:
-      label: Tamaño
-      options:
-        - label: Cabe en una sesión de 1 hora (si no, dividir antes de empezar)
-          required: true
   - type: textarea
     id: contexto
     attributes:

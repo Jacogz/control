@@ -1,6 +1,6 @@
-# Manifiesto v0
+# Manifiesto v1
 
-> Versión 0 — 19/10/2026. Este documento solo se modifica en semanas de enfriamiento, máximo 1 hora.
+> Versión 1 — 26/11/2026. Este documento solo se modifica en semanas de enfriamiento, máximo 1 hora.
 
 ## Propósito
 Terminar y mantener proyectos que:
@@ -9,19 +9,22 @@ Terminar y mantener proyectos que:
 3. me entrenen en trabajo agéntico real con Claude Code y Cowork.
 
 ## Presupuesto y ritmo
-- 6 horas semanales protegidas, ADICIONALES a la carga de clase.
+- 10 horas semanales protegidas, ADICIONALES a la carga de clase.
 - Ritmo por defecto:
   - lunes: a las 10:00am, 1 h
+  - martes: a las 10:00am, 1 h
   - miércoles: a las 10:00am, 1 h
   - jueves: a las 5:00pm, 1 h
+  - viernes: a las 10:00am, 1 h
   - sábado, 3 h a las 10:00am
+  - domingo, 2 h a las 10:00am
 - Semana pico (parciales, entregas): el mínimo es 1 sesión de 1 h. No es para avanzar, es para no romper la cadena.
 - Una semana en cero es aceptable. Dos seguidas activan una revisión del plan, no una sesión de culpa.
 
 ## Principios
 1. **Tiempo fijo, alcance variable.** Primero decido cuánto vale un proyecto en tiempo; después recorto el alcance para que quepa.
 2. **"Terminado" se define antes de empezar**, con criterios verificables.
-3. **Un solo proyecto personal activo a la vez.** Los proyectos de clase se registran aquí pero no consumen las 6 h.
+3. **Un solo proyecto personal activo a la vez.** Los proyectos de clase se registran aquí pero no consumen las 10 h.
 4. **Archivar con post-mortem también es terminar.**
 5. **Cada tarea declara su modo:**
    - *Delegar*: el agente lo hace.
@@ -58,6 +61,6 @@ Un proyecto es `candidato` solo si responde sí a las tres preguntas:
 |---|---|---|
 | Inicio de sesión | Cada sesión | 5 min: leer NEXT.md, confirmar tarea y modo |
 | Cierre de sesión | Cada sesión | 5 min: NEXT.md, comentario en el issue, documentos a indexar |
-| Planeación | Lunes | 15 min: leer la revisión, vaciar inbox, cortar ítems de 1 h |
+| Planeación | Lunes | 15 min: leer la revisión, vaciar inbox, cortar ítems con resultado verificable |
 | Revisión | Domingo (automática) | Cowork escribe; yo la leo el lunes |
 | Cierre de proyecto de clase | Al entregar | 30 min: sección "Cierre" de la ficha |

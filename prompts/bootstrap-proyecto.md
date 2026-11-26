@@ -30,7 +30,7 @@ Lee del repo de control: `MANIFIESTO.md`, `proyectos/_plantilla.md`, `plantillas
 1. Redacta la ficha completa con la plantilla.
 2. Cuestiona tu propio borrador antes de mostrármelo:
    - ¿cada criterio de la definición de terminado es verificable?
-   - ¿el alcance cabe en el appetite a ~6 h/semana (portafolio) o en las fechas del curso (clase)?
+   - ¿el alcance cabe en el appetite a ~10 h/semana (portafolio) o en las fechas del curso (clase)?
    Si no cabe, propón qué recortar y muévelo a "Fuera de alcance".
 3. Muéstrame la ficha y espera mi aprobación o mis cambios.
 
@@ -55,8 +55,8 @@ Termina con una lista de 5 a 8 issues para arrancar, en el formato de la plantil
 
 Reglas para la lista:
 - El primero debe poder hacerse en la próxima sesión sin preparación adicional.
-- Todos caben en 1 hora; si uno no cabe, divídelo.
+- Cada uno tiene un solo resultado verificable; si tiene más de uno, divídelo.
 - Al menos uno en modo *Solo primero*, en la parte del proyecto donde más quiero aprender.
-- Si hay algo riesgoso o desconocido, el primer issue que lo toca es una exploración acotada (spike) de 1 hora, no la implementación.
+- Si hay algo riesgoso o desconocido, el primer issue que lo toca es una exploración acotada (spike) con un resultado concreto, no la implementación.
 
 No crees los issues. Cuando los apruebe, créalos con `gh issue create`, agrégalos al Project con `gh project item-add` y asígnales Tipo y Estado. Si el repo aún no tiene las labels necesarias, créalas antes con `gh label create`.

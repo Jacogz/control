@@ -20,7 +20,7 @@ repo-control/
 │   ├── revision-semanal.md       ← tarea programada de Cowork (domingo)
 │   └── cowork-control.md         ← instrucciones del proyecto "Control" en Cowork
 └── .github/ISSUE_TEMPLATE/
-    ├── tarea.yml                 ← unidad de trabajo de 1 hora
+    ├── tarea.yml                 ← unidad de trabajo con resultado verificable
     └── idea.yml                  ← captura rápida al inbox
 ```
 
