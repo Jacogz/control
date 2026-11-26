@@ -48,7 +48,7 @@ Cuando comparta un enunciado en la sesión o lo suba al repo:
    - requisitos ya cubiertos por issues existentes (con número);
    - requisitos nuevos sin issue;
    - ambigüedades o contradicciones, formuladas como preguntas para el profesor.
-6. **Propón issues nuevos** para los requisitos sin cubrir, con el formato de la plantilla de tarea: resultado, modo, verificación y tamaño de 1 hora. No los crees sin mi confirmación.
+6. **Propón issues nuevos** para los requisitos sin cubrir, con el formato de la plantilla de tarea: resultado, modo y verificación. No los crees sin mi confirmación.
 7. **Sincroniza:** actualiza la tabla de entregables de la ficha en el repo de control y el campo "Entrega" del Project. Si no tienes acceso al repo de control en esta sesión, pídeme que lo agregue con `/add-dir` o dime exactamente qué actualizar.
 
 ## Protocolo de sesión
